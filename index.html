@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+JEKn5B1aSt6Rv2fN5Etkl1uhS8p3brF/yf5I5k2J5JwS1k" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+JEKn5B1aSt6Rv2fN5Etkl1uhS8p3brF/yf5I5k2J5JwS1k" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <section class="first">
+    <header class="navbar">
+        <div class="logo">
+            <img src="netflix-logo.png" alt="Netflix Logo">
+        </div>
+        <div class="mobile-menu-icon" id="mobile-menu-icon">
+            <i class="fas fa-list"></i>
+        </div>
+        <nav>
+            <ul class="desktop-nav">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> TV Shows</a></li>
+                <li><a href="#"> Movies</a></li>
+                <li><a href="#"> Latest</a></li>
+                <li><a href="#"> My List</a></li>
+                <li><a href="#"> Browse by Languages</a></li>
+            </ul>
+        
+            <!-- Navigation List for Mobile -->
+            <ul class="mobile-nav">
+                <li>
+                    <a href="#">
+                        <span class="fa-li"><i class="fas fa-home"></i></span> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa-li"><i class="fas fa-tv"></i></span> TV Shows
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa-li"><i class="fas fa-film"></i></span> Movies
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa-li"><i class="fas fa-clock"></i></span> Latest
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa-li"><i class="fas fa-list"></i></span> My List
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa-li"><i class="fas fa-language"></i></span> Browse by Languages
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="icons">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-bell"></i>
+            <img src="user-avatar.jpg" alt="User Avatar" height="20" width="20">
+        </div>
+    </header>
+
+    <!-- Initial Section with Movie Title, Description, and Buttons -->
+    <section class="initial-section">
+        <h1>INVENTING<br /> ANNA</h1>
+        <p>Audacious entrepreneur or con artist? A journalist chases down the story of Anna Delvey,<br /> who convinced New York's elite she was a German heiress.</p>
+        <div class="initial-buttons">
+            <button class="play-button"><i class="fas fa-play"></i> Play</button>
+            <button class="info-button"><i class="fas fa-info-circle"></i> More Info</button>
+        </div>
+    </section>
+    
+    </section>
+
+    <!-- My List Section -->
+    <section class="my-list-section">
+        <h2>My List</h2>
+        <div class="scrollable-row">
+            <!-- Scrollable row of movie thumbnails (placeholders) -->
+            <div class="thumbnail">
+                <img src="13 reasons why.png" alt="Movie Title 1">
+            </div>
+            <div class="thumbnail">
+                <img src="blacklist.png" alt="Movie Title 2">
+            </div>
+            <div class="thumbnail">
+                <img src="good girls.png" alt="Movie Title 1">
+            </div>
+            <div class="thumbnail">
+                <img src="jumanji.png" alt="Movie Title 2">
+            </div>
+            <div class="thumbnail">
+                <img src="Hancock.png" alt="Movie Title 1">
+            </div>
+            <div class="thumbnail">
+                <img src="inception.png" alt="Movie Title 2">
+            </div>
+            <div class="thumbnail">
+                <img src="love at first sight.png" alt="Movie Title 1">
+            </div>
+            <div class="thumbnail">
+                <img src="miss education.png" alt="Movie Title 2">
+            </div>
+            <!-- Add more movie thumbnails as needed -->
+        </div>
+    </section>
+
+    <!-- Critically Acclaimed Shows Section -->
+    <section class="acclaimed-shows-section">
+        <h2>Critically Acclaimed Shows</h2>
+        <div class="scrollable-row">
+            <!-- Scrollable row of movie thumbnails (placeholders) -->
+            <div class="thumbnail">
+                <img src="Night School.png" alt="Show Title 1">
+            </div>
+            <div class="thumbnail">
+                <img src="orange is the new black.png" alt="Show Title 2">
+            </div>
+            <div class="thumbnail">
+                <img src="ride along 2.png" alt="Show Title 1">
+            </div>
+            <div class="thumbnail">
+                <img src="sisypmus.png" alt="Show Title 2">
+            </div>
+            <div class="thumbnail">
+                <img src="the 100.png" alt="Show Title 1">
+            </div>
+            <div class="thumbnail">
+                <img src="the big bang theory.png" alt="Show Title 2">
+            </div>
+            <div class="thumbnail">
+                <img src="inception.png" alt="Show Title 1">
+            </div>
+            <div class="thumbnail">
+                <img src="good girls.png" alt="Show Title 2">
+            </div>
+            <!-- Add more show thumbnails as needed -->
+        </div>
+    </section>
+
+    <!-- Trending Now Section -->
+    <section class="trending-now-section">
+        <h2>Trending Now</h2>
+        <div class="scrollable-row">
+            <!-- Scrollable row of movie thumbnails (placeholders) -->
+            <div class="thumbnail">
+                <img src="the flash.png" alt="Trending Movie 1">
+            </div>
+            <div class="thumbnail">
+                <img src="the one.png" alt="Trending Movie 2">
+            </div>
+            <div class="thumbnail">
+                <img src="the vampire diaries.png" alt="Trending Movie 1">
+            </div>
+            <div class="thumbnail">
+                <img src="you are so not invited to my Bat Mitzvah.png" alt="Trending Movie 2">
+            </div>
+            <div class="thumbnail">
+                <img src="orange is the new black.png" alt="Trending Movie 1">
+            </div>
+            <div class="thumbnail">
+                <img src="miss education.png" alt="Trending Movie 2">
+            </div>
+            <div class="thumbnail">
+                <img src="inception.png" alt="Trending Movie 1">
+            </div>
+            <div class="thumbnail">
+                <img src="sisypmus.png" alt="Trending Movie 2">
+            </div>
+            <!-- Add more trending movie thumbnails as needed -->
+        </div>
+    </section>
+
+    <!-- New Releases Section -->
+    <section class="new-releases-section">
+        <h2>New Releases</h2>
+        <div class="scrollable-row">
+            <!-- Scrollable row of movie thumbnails (placeholders) -->
+            <div class="thumbnail">
+                <img src="the lovebirds.png" alt="New Release 1">
+            </div>
+            <div class="thumbnail">
+                <img src="army of thieves.png" alt="New Release 2">
+            </div>
+            <div class="thumbnail">
+                <img src="the chosen.png" alt="New Release 1">
+            </div>
+            <div class="thumbnail">
+                <img src="gossip girl.png" alt="New Release 2">
+            </div>
+            <div class="thumbnail">
+                <img src="breaking bad.png" alt="New Release 1">
+            </div>
+            <div class="thumbnail">
+                <img src="bodyguard.png" alt="New Release 2">
+            </div>
+            <div class="thumbnail">
+                <img src="the recruit.png" alt="New Release 1">
+            </div>
+            <div class="thumbnail">
+                <img src="altered carbon.png" alt="New Release 2">
+            </div>
+            <!-- Add more new release thumbnails as needed -->
+        </div>
+    </section>
+    <section class="new-releases-section">
+        <h2>Popular on Netflix</h2>
+        <div class="scrollable-row">
+            <!-- Scrollable row of movie thumbnails (placeholders) -->
+            <div class="thumbnail">
+                <img src="miss education.png" alt="New Release 1">
+            </div>
+            <div class="thumbnail">
+                <img src="love at first sight.png" alt="New Release 2">
+            </div>
+            <div class="thumbnail">
+                <img src="good girls.png" alt="New Release 1">
+            </div>
+            <div class="thumbnail">
+                <img src="sisypmus.png" alt="New Release 2">
+            </div>
+            <div class="thumbnail">
+                <img src="altered carbon.png" alt="New Release 1">
+            </div>
+            <div class="thumbnail">
+                <img src="the recruit.png" alt="New Release 2">
+            </div>
+            <div class="thumbnail">
+                <img src="insantiable.png" alt="New Release 1">
+            </div>
+            <div class="thumbnail">
+                <img src="Hancock.png" alt="New Release 2">
+            </div>
+            <!-- Add more new release thumbnails as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        
+        <div class="footer-links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Preferences</a>
+        </div>
+    </footer>
+</body>
+
+</html>

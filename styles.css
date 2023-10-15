@@ -1,0 +1,381 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0; /* Remove default margin to ensure full viewport coverage */
+}
+
+/* Header styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    
+}
+.first {
+    background: url('video-placeholder.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire navbar */
+    background-position: center; /* Center the background image */
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight:lighter;
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    margin-right: 10px; /* Adjust this value for spacing */
+}
+
+/* Add spacing between the user avatar and the bell icon */
+.icons img {
+    margin-right: 10px; /* Adjust this value for spacing */
+}
+/* Initial Section styles */
+.initial-section {
+    margin-top: 50px;
+    height: 57vh; /* Set the initial section height to 100 viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 30px;
+    color: #fff; /* Text color */
+}
+
+.initial-section h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.initial-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.initial-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.play-button {
+    background-color: #ffff;
+    color: #242424;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.info-button {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #ffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover, .info-button:hover {
+    background-color: #ffff;
+}
+
+
+/* My List and other sections */
+.my-list-section, .acclaimed-shows-section, .trending-now-section, .new-releases-section {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.scrollable-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-bottom: 20px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.scrollable-row::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and newer Edge */
+}
+
+
+.thumbnail img {
+    width: 160px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    margin: 0 10px;
+}
+
+.footer-links {
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #757575;
+    margin: 0 10px;
+}
+/* Initial styles for mobile navigation menu */
+.mobile-nav {
+    display: none; /* Initially hide the mobile navigation list */
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #111; /* Background color for mobile menu */
+    padding: 20px;
+    position: absolute;
+    top: 65px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    z-index: 1; /* Ensure the menu is on top of other content */
+}
+
+
+/* Media Queries for Different Devices */
+/* CSS for Mobile Nav */
+.mobile-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav li {
+    margin-bottom: 10px;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* CSS for Desktop Nav */
+.desktop-nav {
+    list-style: none;
+    display: flex;
+}
+
+.desktop-nav li {
+    margin-left: 20px;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+@media (max-width: 768px) {
+    /* Hide desktop navigation list on small screens */
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Show mobile navigation list on small screens */
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Adjust mobile navigation list styles */
+    .mobile-nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .mobile-nav a {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-nav i {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Query to Show Desktop Navigation List for Larger Screens */
+@media (min-width: 769px) {
+    .desktop-nav {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/* Media Query to Show/Hide Navigation Lists */
+@media (max-width: 991px) {
+    .desktop-nav {
+        display:none; /* Hide desktop nav on small screens */
+    }
+    .mobile-nav {
+        display:inline-block; /* Show mobile nav on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust header and logo for smaller screens */
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    /* Adjust font size for headings and buttons */
+    h1, h2, h3, h4, p, .cta-button {
+        font-size: 1rem;
+    }
+
+    /* Adjust movie thumbnail width for smaller screens */
+    .thumbnail img {
+        width: 120px;
+    }
+
+    /* Adjust social icons size in the footer */
+    .social-icons {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust header padding for tablets */
+    .navbar {
+        padding: 20px;
+    }
+
+    /* Adjust font size for headings and buttons */
+    h1, h2, h3, h4, p, .cta-button {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust movie thumbnail width for tablets */
+    .thumbnail img {
+        width: 140px;
+    }
+}
+/* CSS for Mobile Menu Icon */
+.mobile-menu-icon {
+    display: none; /* Initially hide the icon on larger screens */
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none; /* Hide the desktop navigation list on small screens */
+    }
+    
+
+    /* Show the mobile menu icon */
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    /* Style the navigation list for mobile */
+    .mobile-nav {
+        display: none; /* Initially hide the mobile navigation list */
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #111; /* Background color for mobile menu */
+        padding: 20px;
+        position: absolute;
+        top: 65px; /* Adjust the top position as needed */
+        right: 20px; /* Adjust the right position as needed */
+        z-index: 1; /* Ensure the menu is on top of other content */
+    }
+
+    /* Style the mobile navigation list items */
+    .mobile-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: lighter;
+        margin-bottom: 10px;
+        font-size: 1.2rem; /* Adjust the font size as needed */
+    }
+
+    /* Show the mobile navigation list when the icon is clicked */
+    .mobile-menu-icon.active + nav .mobile-nav {
+        display: flex;
+    }
+}
+
+
+/* Media Queries for Large Screens */
+@media (min-width: 1025px) {
+    /* Increase padding for header and sections */
+    .navbar, .initial-section, .my-list-section, .acclaimed-shows-section, .trending-now-section, .new-releases-section {
+        padding: 30px 50px;
+    }
+
+    /* Increase font size for headings and buttons */
+    h1, h2, h3, h4, p, .cta-button {
+        font-size: 1.5rem;
+    }
+
+    /* Increase movie thumbnail width for larger screens */
+    .thumbnail img {
+        width: 180px;
+    }
+}
